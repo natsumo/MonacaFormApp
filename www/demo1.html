@@ -1,0 +1,57 @@
+<ons-page id="demo1Page">
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button onclick="fn.open()">
+                <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center">
+            demo1：保存
+        </div>
+    </ons-toolbar>
+    <section style="text-align: center;">
+        <ons-list>
+            <ons-list-header>名前</ons-list-header>
+            <p style="text-align: center;">
+              <ons-input id="inputName" type="text" modifier="underbar" placeholder="name" float></ons-input>
+            </p>
+        </ons-list>
+            
+        <ons-list>
+            <ons-list-header>メールアドレス</ons-list-header>
+            <p style="text-align: center;">
+              <ons-input id="inputEmailAddress" modifier="underbar" type="address" placeholder="email address" float></ons-input>
+            </p>
+        </ons-list>    
+        <ons-list>
+            <ons-list-header>年齢</ons-list-header>
+            <div style="text-align: center;">
+                <select id="inputAge" class="select-input select-input--material"></select>
+            </div>
+        </ons-list>
+        <ons-list>
+            <ons-list-header>都道府県</ons-list-header>
+            <div style="text-align: center;">
+                <select id="inputPrefecture" class="select-input select-input--material"></select>
+            </div>
+        </ons-list>
+        <ons-list>
+            <ons-list-header>問い合わせタイトル</ons-list-header>
+            <p style="text-align: center;">
+              <ons-input id="inputTitle" type="text" modifier="underbar" placeholder="title" float></ons-input>
+            </p>
+        </ons-list>
+        <ons-list>
+            <ons-list-header>問い合わせ内容</ons-list-header>
+            <p style="text-align: center;">
+              <textarea id="inputContents" placeholder="contents"></textarea>
+            </p>
+        </ons-list>
+        
+        <!--送信ボタン-->
+        <div>
+            <ons-button id="SendBtn" modifier="large" onclick="sendForm();">送信</ons-button>
+        </div>
+         
+    </section>
+</ons-page>

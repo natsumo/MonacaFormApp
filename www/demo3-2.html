@@ -1,0 +1,25 @@
+<ons-page id="demo3-2Page">
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button onclick="fn.open()">
+                <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center">
+            demo3-2：条件検索
+        </div>
+    </ons-toolbar>
+    <section style="text-align: center;">
+        <ons-list>
+            <ons-list-header>年齢</ons-list-header>
+            <div style="text-align: center;">
+                <select id="inputAgeGreaterThan" class="select-input select-input--material"></select>以上
+                <select id="inputAgeLessThan" class="select-input select-input--material"></select>未満
+                <div style="text-align: center; padding-bottom: 10px; padding-top: 10px;">
+                    <ons-button onClick="searchAge();">検索</ons-button>
+                </div>
+            </div>
+        </ons-list>
+        <ul id="searchDataList2" class="list list--material"></ul>
+    </section>
+</ons-page>
