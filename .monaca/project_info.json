@@ -4,12 +4,12 @@
     "xcode_version": "9",
     "title-ja": "MonacaFormApp2",
     "title-en": "",
-    "description-ja": "2018\/02\/14開催 Monaca共催Webセミナー「クラウドデータベースを使ってみよう」サンプルアプリ",
+    "description-ja": "2018\/02\/14 Monaca共催セミナー「クラウドデータベースを使ってみよう」サンプルプロジェクト",
     "description-en": "",
     "category": "User Template",
     "platform": [
         "android",
         "ios"
     ],
-    "name": "generated-1518448970-5a7d8818e78885e7198b4567"
+    "name": "generated-1518521653-5a7d8818e78885e7198b4567"
 }
