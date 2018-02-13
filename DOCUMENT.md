@@ -83,7 +83,7 @@ __問い合わせフォーム__ をイメージしたサンプルアプリを通
 
 * データの削除
 * データの更新
-* その他にできることは
+* その他mBaaSのDBでできること
 
 ---
 .footnote_right[
@@ -101,7 +101,7 @@ __問い合わせフォーム__ をイメージしたサンプルアプリを通
 ]
 ## 今回利用するツール
 ### ニフクラ mobile backend（ mBaaS ）
-__にふくら-もばいる-ばっくえんど 【[ニフクラ mobile backend](http://mb.cloud.nifty.com/about.htm)】__ スマートフォンアプリに必要なバックエンド機能が開発不要で利用できるクラウドサービス。 クラウド上に用意された機能をAPIで呼び出すだけで利用できます。また、APIを簡単に使うためのSDKを用意しています（ iOS / Android / Monaca / Unity ）。mobile Backend as a Service の頭文字を取って、通称 **mBaaS** 呼ばれます。
+__にふくら-もばいる-ばっくえんど 【[ニフクラ mobile backend](http://mb.cloud.nifty.com/about.htm)】__ スマートフォンアプリに必要なバックエンド機能が開発不要で利用できるクラウドサービス。 クラウド上に用意された機能をAPIで呼び出すだけで利用できます。また、APIを簡単に使うためのSDKを用意しています（ iOS / Android / Monaca / Unity ）。mobile Backend as a Service の頭文字を取って、通称 **mBaaS** と呼ばれます。
 
 .center[<img src="document-img/About_mBaaS.png" alt="About_mBaaS" width="300px">]
 
@@ -193,14 +193,13 @@ layout: false
   * 問い合わせフォームに値を入力して保存してみましょう
 1. 『demo2：全件検索』
   * 問い合わせデータをアプリ側に取得してみましょう
-1. 『demo3-1：条件検索』（完全一致）
+1. 『demo3：条件検索』（完全一致/～以上～未満）
   * 問い合わせデータを条件を指定して取得してみましょう
-1. 『demo3-2：条件検索（～以上～未満）』
   * 問い合わせデータを範囲を指定して取得してみましょう
 1. おまけ
-  * データの削除の仕方
-  * データの更新の仕方
-  * その他mBaaSでできること
+  * データの削除
+  * データの更新
+  * その他mBaaSのDBでできること
 ]
 
 ---
@@ -215,7 +214,7 @@ layout: false
 
 * Monacaにログインをします
 
-.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="700px">]
+.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="560px">]
 
 https://ja.monaca.io/
 
@@ -333,12 +332,12 @@ http://mb.cloud.nifty.com/
 ### mBaaS JS SDK のインポート
 * 追加をクリックします
 
-.center[<img src="document-img/add_js_sdk_2.PNG" alt="add_js_sdk_2" width="600px">]
+.center[<img src="document-img/add_js_sdk_2.png" alt="add_js_sdk_2" width="600px">]
 
 * バージョンは最新（デフォルト）のまま `インストール` をクリックします
 * チェックを入れ `保存する` をクリックします
 
-.center[<img src="document-img/add_js_sdk_3.PNG" alt="add_js_sdk_3" width="600px">]
+.center[<img src="document-img/add_js_sdk_3.png" alt="add_js_sdk_3" width="600px">]
 
 ---
 .footnote_right[
@@ -350,7 +349,7 @@ http://mb.cloud.nifty.com/
 ### mBaaS JS SDK のインポート
 * SDK がインポートされました
 
-.center[<img src="document-img/add_js_sdk_4.PNG" alt="add_js_sdk_4" width="700px">]
+.center[<img src="document-img/add_js_sdk_4.png" alt="add_js_sdk_4" width="700px">]
 
 ---
 .footnote_right[
@@ -617,34 +616,234 @@ function setData(str, results, listId) {
 ]
 ]
 
-## 『demo3-1：条件検索』（完全一致）
+## 2.3. 『demo3：条件検索』
 ### 『demo3-1：条件検索』（完全一致）動作確認
 
-* データを用意しましょう
-* demo1画面に戻ってデータを追加しましましょう
+* demo3 に進む前にデータを用意しましょう
+  * demo1 画面に戻ってデータを追加します
 
-.center[<img src="document-img/fetchAll_4.png" alt="fetchAll_4" width="250px">]
-
-※ここまで作成済み※
+.center[<img src="document-img/dummy_data_1.png" alt="dummy_data_1" width="600px">]
 
 ---
 .footnote_right[
 .right[
-ハンズオン
+ハンズオン<br>2.3. 『demo3：全件検索』
+]
+]
+
+### 『demo3-1：条件検索』（完全一致）動作確認
+
+* 左上メニューから demo3-1 に移動します
+* 登録したデータからメールアドレスまたは都道府県を指定してデータを検索取得します
+
+.center[<img src="document-img/search_2.png" alt="search_2" width="500px">]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.3. 『demo3：全件検索』
+]
+]
+
+### 『demo3-1：条件検索』（完全一致）動作確認
+
+* **完全一致** 検索になるので以下のような検索はできません
+
+.center[<img src="document-img/search_3.png" alt="search_3" width="250px">]
+
+* コードを見てみましょう！
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.3. 『demo3：全件検索』
+]
+]
+
+### 『demo3-1：条件検索』（完全一致）動作確認
+
+* Monaca を開き、`js/mb.js` を開きます
+
+```js
+/***** demo3-1：条件検索 *****/
+getSearchData: function(feild, inputData) {
+    // インスタンスの生成
+    var inquiry = ncmb.DataStore('Inquiry');
+    // データの条件検索取得（完全一致）
+    inquiry.order('createDate',true)
+           .equalTo(feild, inputData)
+           .fetchAll()
+           .then(function(results){
+               // 検索成功
+           })
+           .catch(function(error){
+               // 検索失敗
+           });
+}
+```
+
+* `equalTo(key, value)` : key の値が value と一致するデータを指定
+* `fetchAll()` : 全件検索取得する処理
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.3. 『demo3：全件検索』
+]
+]
+
+### 『demo3-2：条件検索』（～以上～未満）動作確認
+
+* 左上メニューから demo3-2 に移動します
+* 登録したデータから年齢の範囲指定してデータを検索取得します
+
+.center[<img src="document-img/search_4.png" alt="search_4" width="550px">]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.3. 『demo3：全件検索』
+]
+]
+
+### 『demo3-2：条件検索』（～以上～未満）動作確認
+
+* コードを見てみましょう
+* Monaca を開き、`js/mb.js` を開きます
+
+```js
+/***** demo3-2：条件検索（範囲指定） *****/
+getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) {
+    // インスタンスの生成
+    var inquiry = ncmb.DataStore('Inquiry');
+    // データのの条件検索取得（範囲指定）
+    inquiry.order('createDate',true) // 保存日時降順
+           .greaterThanOrEqualTo(feild, inputDataGreaterThan)
+           .lessThan(feild, inputDataLessThan)
+           .fetchAll()
+           .then(function(results){
+               // 検索成功
+           })
+           .catch(function(error){
+               // 検索失敗
+           });
+}
+```
+
+.size_small_9[
+* `greaterThanOrEqualTo(key, value)` : key の値が value 以上に該当するデータを指定
+* `lessThan(key, value)` : key の値が value 未満に該当するデータを指定
+]
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.3. 『demo3：全件検索』
+]
+]
+
+### 『demo3-2：条件検索』（～以上～未満） 参考
+**AND検索（A かつ B）**
+
+```js
+// 10以上50未満
+inquiry.greaterThanOrEqualTo("age", 10)
+       .lessThan("age", 50)
+       .fetchAll()
+```
+* メソッドチェーンでつないで記述します
+
+**OR検索（A または B）**
+
+```js
+// 10未満または50以上
+var subquery1 = inquiry.lessThan("age", 10);
+var subquery2 = inquiry.greaterThanOrEqualTo("age", 50);
+inquiry.or([subquery1, subquery2])
+       .fetchAll()
+```
+* サブクエリを作成して `or` メソッドで合成します
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.4. おまけ
+]
+]
+
+## 2.4. おまけ
+### データの削除
+
+```js
+// データの削除
+inquiry.delete()
+```
+
+### データの更新
+
+```js
+// メールアドレスの更新
+inquiry.set("emailAddress", "test@test.jp")
+       .update();
+```
+
+---
+.footnote_right[
+.right[
+ハンズオン<br>2.4. おまけ
+]
+]
+
+### その他mBaaSのDBでできること
+
+* **ポインタ・リレーション**
+  * データどうしを関連付けすることができます
+* **参照権限（ACL）**
+  * データの読み書きを制限できます
+
+参考：[データストア \(Monaca\) : 基本的な使い方 \| ニフクラ mobile backend](http://mb.cloud.nifty.com/doc/current/datastore/basic_usage_monaca.html)
+---
+.footnote_right[
+.right[
+まとめ
 ]
 ]
 
 ## まとめ
 
+
+クラウドデータベースであるmBaaSの活用方法を学びました
+
+.left-column[
+
 .size_large_13[
-
-* ほげほげ
-
+* データの保存
+  * クラス作成
+  * `set()`
+  * `save()`
+* データの取得
+  * `order()`
+  * `fetchAll()`
+* データの条件検索
+  * `equalTo()`
+  * `greaterThanOrEqualTo()`
+  * `lessThan()`
+]
 ]
 
-<br><br><br><br><br>
-などなど...
-今後のアプリ開発の参考にしていただけたら幸いです\\('▼'\*)/！
+.right-column[
+.right[
+<br>
+今後のアプリ開発の<br>参考にしていただけたら<br>幸いです！
+
+<img src="document-img/takano.png" alt="takano.png" width="200px">
+
+.size_small_7[
+mBaaS非公式キャラクター<br>タカノくん
+]
+]
+]
+
 
 ---
 layout: true
