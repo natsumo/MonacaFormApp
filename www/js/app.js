@@ -91,7 +91,7 @@ function searchAge() {
     }
     
     // 入力チェック
-    if (inputAgeGreaterThan == '' || inputAgeLessThan == '') {
+    if (inputAgeGreaterThan === '' || inputAgeLessThan === '') {
         ons.notification.alert('値を入力してください');
     } else if (inputAgeGreaterThan >= inputAgeLessThan){
         ons.notification.alert('値が不正です');
