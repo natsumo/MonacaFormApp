@@ -2,13 +2,13 @@ name: inverse
 layout: true
 class: center, middle, inverse
 ---
-# <span style="font-size: 30%">Monaca × ニフクラ mobile backend 共催セミナー </span><br>クラウドデータベースを<br>使ってみよう！
+# <span style="font-size: 30%">Monaca × ニフクラ mobile backend</span><br>クラウドデータベースを<br>使ってみよう！
 富士通クラウドテクノロジーズ株式会社
 
 .right[<img src="document-img/takano.png" alt="takano.png" width="150px">]
 
 .footnote[
-2018/02/14
+2018/02/14作成（2018/05/21更新）
 ]
 
 ---
@@ -34,7 +34,7 @@ __問い合わせフォーム__ をイメージしたサンプルアプリを通
 はじめに
 ]
 
-## データをクラウドに保存する<br>３つのメリットとは？
+## データをクラウドに保存する<br>３つのメリット
 
 .size_large_13[
 1. 保存した瞬間、瞬時にデータを共有できる
@@ -83,7 +83,7 @@ __問い合わせフォーム__ をイメージしたサンプルアプリを通
 
 * データの削除
 * データの更新
-* その他mBaaSのDBでできること
+* その他 ニフクラ mobile backned でできること
 
 ---
 .footnote_right[
@@ -100,8 +100,8 @@ __問い合わせフォーム__ をイメージしたサンプルアプリを通
 はじめに
 ]
 ## 今回利用するツール
-### ニフクラ mobile backend（ mBaaS ）
-__にふくら-もばいる-ばっくえんど 【[ニフクラ mobile backend](http://mb.cloud.nifty.com/about.htm)】__ スマートフォンアプリに必要なバックエンド機能が開発不要で利用できるクラウドサービス。 クラウド上に用意された機能をAPIで呼び出すだけで利用できます。また、APIを簡単に使うためのSDKを用意しています（ iOS / Android / Monaca / Unity ）。mobile Backend as a Service の頭文字を取って、通称 **mBaaS** と呼ばれます。
+### ニフクラ mobile backend
+__にふくら-もばいる-ばっくえんど 【[ニフクラ mobile backend](http://mb.cloud.nifty.com/about.htm)】__ スマートフォンアプリに必要なバックエンド機能が開発不要で利用できるクラウドサービス。 クラウド上に用意された機能を API で呼び出すだけで利用できます。また、APIを簡単に使うための SDK を用意しています（ iOS / Android / Monaca / Unity ）。mobile Backend as a Service の頭文字を取って、通称 **mBaaS** と呼ばれます。
 
 .center[<img src="document-img/About_mBaaS.png" alt="About_mBaaS" width="300px">]
 
@@ -111,24 +111,24 @@ __にふくら-もばいる-ばっくえんど 【[ニフクラ mobile backend](
 ]
 
 ## 今回利用するツール
-### Monaca と mBaaS で<br>サーバー連携アプリは簡単に実現可能に
+### Monaca と mobile backend で<br>サーバー連携アプリは簡単に実現可能に
 この２つを組み合わせると、高度なアプリも簡単スピーディーに開発できます
 
 .center[<img src="document-img/Monaca_mBaaS.png" alt="Monaca_mBaaS" width="400px">]
 
 .left-column[
-__《アプリ側》Monaca のすごいところ__
+__《アプリ側》Monaca の利点__
 .size_small_7[
-* 無料で使える！
+* **無料** から使える！
 * iOS / Android 同時に開発可能！
 * いつでもどこでも、ブラウザで開発OK！
-* **mBaaSのSDK導入** がクリックだけで簡単に！
+* **SDK導入** はクリックだけで簡単！
 ]
 ]
 .right-column[
-__《サーバー側》mBaaS のすごいところ__
+__《サーバー側》mobile backend の利点__
 .size_small_7[
-* 無料で使える！
+* **無料** から使える！
 * **バックエンドの開発・運用は一切不要**！
 * **コントロールパネル** からクラウドの状況をパッと確認できる！
 ]
@@ -152,10 +152,11 @@ layout: false
 .size_large_13[
 * Monaca の利用登録（無料）
   * https://ja.monaca.io/register/start.html
-* ニフクラ mobile backend ( mBaaS ) の利用登録（無料）
+* ニフクラ mobile backend の利用登録（無料）
   * http://mb.cloud.nifty.com/signup.htm
 * ブラウザ Chrome 最新版
 * Monaca デバッガー（任意）
+  * https://ja.monaca.io/debugger.html
 ]
 
 ---
@@ -166,17 +167,17 @@ layout: false
 ]
 
 ## 取り組み内容
-コーディング済みサンプルプロジェクトを利用します。必要な設定や作業後、動作確認いただけます。
+コーディング済みサンプルプロジェクトを利用します。必要な設定や作業後、すぐに動作確認いただけます。
 
 ### 1. 環境準備手順
 .size_large_13[
 1. Monaca の準備
   * サンプルプロジェクトのインポート
-1. mBaaS の準備
+1. mobile backend の準備
   * アプリの新規作成
-1. Monaca で mBaaS を利用するための準備
-  * mBaaS JS SDK のインポート
-  * mBaaS JS SDK の初期化（mBaaS APIキー設定）
+1. Monaca で mobile backend を利用するための準備
+  * JavaScript SDK のインポート
+  * JavaScript SDK の初期化（APIキー設定）
 ]
 
 ---
@@ -199,7 +200,7 @@ layout: false
 1. おまけ
   * データの削除
   * データの更新
-  * その他mBaaSのDBでできること
+  * その他 mobile backend でできること
 ]
 
 ---
@@ -212,9 +213,9 @@ layout: false
 ## 1.1. Monaca の準備
 ### サンプルプロジェクトのインポート
 
-* Monacaにログインをします
+* Monaca にログインをします
 
-.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="560px">]
+.center[<img src="document-img/Monaca_1.png" alt="Monaca_1" width="600px">]
 
 https://ja.monaca.io/
 
@@ -248,14 +249,14 @@ https://ja.monaca.io/
 ---
 .footnote_right[
 .right[
-ハンズオン<br>1.2. mBaaS の準備
+ハンズオン<br>1.2. mobile backend の準備
 ]
 ]
 
-## 1.2. mBaaS の準備
+## 1.2. mobile backend の準備
 ### アプリの新規作成
 
-* mBaaS にログインします
+* mobile backend にログインします
 
 .center[<img src="document-img/make_mb_app_0.png" alt="make_mb_app_0" width="600px">]
 
@@ -264,7 +265,7 @@ http://mb.cloud.nifty.com/
 ---
 .footnote_right[
 .right[
-ハンズオン<br>1.2. mBaaS の準備
+ハンズオン<br>1.2. mobile backend の準備
 ]
 ]
 
@@ -275,14 +276,14 @@ http://mb.cloud.nifty.com/
 .center[<img src="document-img/make_mb_app_2.PNG" alt="make_mb_app_2" width="400px">]
 
 
-* mBaaS を既に使用したことがある場合は、画面上方のメニューバーにある「`+新しいアプリ`」をクリックすると同じ画面が表示されます
+* mobile backend を既に使用したことがある場合は、画面上方のメニューバーにある「`+新しいアプリ`」をクリックすると同じ画面が表示されます
 
 .center[<img src="document-img/make_mb_app_1.PNG" alt="make_mb_app_1" width="150px">]
 
 ---
 .footnote_right[
 .right[
-ハンズオン<br>1.2. mBaaS の準備
+ハンズオン<br>1.2. mobile backend の準備
 ]
 ]
 
@@ -296,7 +297,7 @@ http://mb.cloud.nifty.com/
 ---
 .footnote_right[
 .right[
-ハンズオン<br>2. mBaaS準備
+ハンズオン<br>2. mobile backend 準備
 ]
 ]
 
@@ -305,17 +306,17 @@ http://mb.cloud.nifty.com/
 
 .center[<img src="document-img/make_mb_app_4.PNG" alt="make_mb_app_4" width="650px">]
 
- これで mBaaS の準備は完了です
+ これで mobile backend の準備は完了です
 
 ---
 .footnote_right[
 .right[
-ハンズオン<br>1.3. Monaca で mBaaS を利用するための準備
+ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
 ]
 ]
 
-## 1.3. Monaca で mBaaS を利用するための準備
-### mBaaS JS SDK のインポート
+## 1.3. Monaca で mobile backend を利用するための準備
+### JavaScript SDK のインポート
 * Monaca を開きます
 * `設定` ＞ `JS/CSSコンポーネントの追加と削除` をクリックます
 * 右上の「 `コンポーネント名` 」に「 `ncmb` 」と入力して検索します
@@ -325,11 +326,11 @@ http://mb.cloud.nifty.com/
 ---
 .footnote_right[
 .right[
-ハンズオン<br>1.3. Monaca で mBaaS を利用するための準備
+ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
 ]
 ]
 
-### mBaaS JS SDK のインポート
+### JavaScript SDK のインポート
 * 追加をクリックします
 
 .center[<img src="document-img/add_js_sdk_2.png" alt="add_js_sdk_2" width="600px">]
@@ -342,11 +343,11 @@ http://mb.cloud.nifty.com/
 ---
 .footnote_right[
 .right[
-ハンズオン<br>1.3. Monaca で mBaaS を利用するための準備
+ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
 ]
 ]
 
-### mBaaS JS SDK のインポート
+### JavaScript SDK のインポート
 * SDK がインポートされました
 
 .center[<img src="document-img/add_js_sdk_4.png" alt="add_js_sdk_4" width="700px">]
@@ -354,13 +355,13 @@ http://mb.cloud.nifty.com/
 ---
 .footnote_right[
 .right[
-ハンズオン<br>1.3. Monaca で mBaaS を利用するための準備
+ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
 ]
 ]
 
-### mBaaS JS SDK の初期化（mBaaS APIキーの読み込み）
+### JavaScript SDK の初期化（APIキーの読み込み）
 * `js/mb.js` を開きます
-* `YOUR_NCMB_APPLICATION_KEY` と `YOUR_NCMB_CLIENT_KEY` を mBaaS でアプリ作成時に発行された２つの APIキー （アプリケーションキーとクライアントキー）に貼り替えます
+* `YOUR_NCMB_APPLICATION_KEY` と `YOUR_NCMB_CLIENT_KEY` を mobile backend でアプリ作成時に発行された２つの APIキー （アプリケーションキーとクライアントキー）に貼り替えます
 
 ```js
 // APIキー
@@ -368,20 +369,20 @@ var applicationKey = 'YOUR_NCMB_APPLICATION_KEY';
 var clientKey = 'YOUR_NCMB_CLIENT_KEY';
 ```
 
-* APIキーは mBaaS管理画面の「アプリ設定」で確認できます
+* APIキーは mobile backend 管理画面の「アプリ設定」で確認できます
 
 .center[<img src="document-img/confirm_apikey.png" alt="confirm_apikey" width="700px">]
 
 ---
 .footnote_right[
 .right[
-ハンズオン<br>1.3. Monaca で mBaaS を利用するための準備
+ハンズオン<br>1.3. Monaca で mobile backend を利用するための準備
 ]
 ]
 
-### mBaaS JS SDK の初期化（mBaaS APIキーの読み込み）
-* APIキー を設定することで、mBaaS SDK が初期化され利用可能になります
-  * `NCMB` は mBaaS SDK を表しています
+### JavaScript SDK の初期化（APIキーの読み込み）
+* APIキー を設定することで、SDK が初期化され利用可能になります
+  * `NCMB` は SDK を表しています
 
 ```js
 // SDK初期化
@@ -420,11 +421,11 @@ Monaca デバッガーまたは<br>プレビュー画面で動作確認をしま
 
 ### 『demo1：保存』動作確認
 
-* 確認 Alert が出てば保存成功です
+* 確認 Alert が出れば保存成功です
 
-.center[<img src="document-img/save_3.png" alt="save_3" width="350px">]
+.center[<img src="document-img/save_3.png" alt="save_3" width="450px">]
 
-.right[…でも、本当にクラウドにデータが保存されているの？？<br>確認してみましょう！]
+.right[…本当にクラウドにデータが保存されているのでしょうか<br>確認してみましょう！]
 
 ---
 .footnote_right[
@@ -437,12 +438,12 @@ Monaca デバッガーまたは<br>プレビュー画面で動作確認をしま
 
 保存されたデータを確認してみましょう！
 
-* mBaaS を開きます
+* mobile backend を開きます
 * `データストア` を開くと 「`Inquiry`」というクラスが作成されていて、その中にデータが格納されていることを確認できます
 
 .center[<img src="document-img/save_4.png" alt="save_4" width="800px">]
 
-.right[おおお！<br>…でもどうやって保存しているの？？<br>コードを見てみましょう！]
+.right[<br>…どのようにして保存されているのでしょうか？？<br>コードを見てみましょう！]
 
 ---
 .footnote_right[
@@ -488,7 +489,7 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 ## 2.2. 『demo2：全件検索』
 ### 『demo2：全件検索』動作確認
 
-* demo1画面からdemo2画面に移動します
+* demo1 画面から demo2 画面に移動します
 
 .center[<img src="document-img/fetchAll_2.png" alt="fetchAll_2" width="450px">]
 
@@ -502,9 +503,9 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 ### 『demo2：全件検索』動作確認
 
 .left-column[
-* demo2画面が表示されたタイミングでmBaaSから登録データを取得し表示するように作成しています
-* 今は１件しか登録していないので、１件だけ表示されます
-* demo1画面から複数件登録してからdemo2を見てみましょう
+* demo2 画面が表示されたタイミングで mobile backend から登録データを取得し、画面に表示するように実装しています
+* この時点では１件しか登録していないので、登録された１件だけ表示されます
+* demo1 画面から複数件登録してから、もう一度 demo2 を見てみましょう
 ]
 
 .right-column[
@@ -521,8 +522,8 @@ saveData: function(data) { // 引数： [name, emailAddress, age, prefecture, ti
 ### 『demo2：全件検索』動作確認
 
 .left-column[
-* 例としてダミーデータを10件登録した場合はこんな感じ
-* コードも確認してみましょう！
+* 例としてダミーデータを10件登録した場合はこんな感じになります
+* 検索についてのコードも確認してみましょう！
 ]
 
 .right-column[
@@ -619,24 +620,12 @@ function setData(str, results, listId) {
 ## 2.3. 『demo3：条件検索』
 ### 『demo3-1：条件検索』（完全一致）動作確認
 
-* demo3 に進む前にデータを用意しましょう
-  * demo1 画面に戻ってデータを追加します
-
-.center[<img src="document-img/dummy_data_1.png" alt="dummy_data_1" width="600px">]
-
----
-.footnote_right[
-.right[
-ハンズオン<br>2.3. 『demo3：全件検索』
-]
-]
-
-### 『demo3-1：条件検索』（完全一致）動作確認
-
+.size_small_9[
 * 左上メニューから demo3-1 に移動します
 * 登録したデータからメールアドレスまたは都道府県を指定してデータを検索取得します
+]
 
-.center[<img src="document-img/search_2.png" alt="search_2" width="500px">]
+.center[<img src="document-img/search_2.png" alt="search_2" width="450px">]
 
 ---
 .footnote_right[
@@ -649,8 +638,9 @@ function setData(str, results, listId) {
 
 * **完全一致** 検索になるので以下のような検索はできません
 
-.center[<img src="document-img/search_3.png" alt="search_3" width="250px">]
+.center[<img src="document-img/search_3.png" alt="search_3" width="230px">]
 
+* 部分一致検索が必要な場合は、アプリ内で実装が必要です
 * コードを見てみましょう！
 
 ---
@@ -695,7 +685,7 @@ getSearchData: function(feild, inputData) {
 ### 『demo3-2：条件検索』（～以上～未満）動作確認
 
 * 左上メニューから demo3-2 に移動します
-* 登録したデータから年齢の範囲指定してデータを検索取得します
+* 登録したデータから年齢の範囲を指定してデータを検索取得します
 
 .center[<img src="document-img/search_4.png" alt="search_4" width="550px">]
 
@@ -794,10 +784,10 @@ inquiry.set("emailAddress", "test@test.jp")
 ]
 ]
 
-### その他mBaaSのDBでできること
-
+### その他 mobile backend でできること
+#### データストアの機能
 * **ポインタ・リレーション**
-  * データどうしを関連付けすることができます
+  * データ同士を関連付けすることができます
 * **参照権限（ACL）**
   * データの読み書きを制限できます
 
@@ -812,11 +802,11 @@ inquiry.set("emailAddress", "test@test.jp")
 ## まとめ
 
 
-クラウドデータベースであるmBaaSの活用方法を学びました
+ニフクラ mobile backend クラウドデータベースの活用方法を学びました！
 
 .left-column[
 
-.size_large_13[
+.size_large_11[
 * データの保存
   * クラス作成
   * `set()`
@@ -834,12 +824,12 @@ inquiry.set("emailAddress", "test@test.jp")
 .right-column[
 .right[
 <br>
-今後のアプリ開発の<br>参考にしていただけたら<br>幸いです！
+今後のアプリ開発の<br>参考にしていただけたら幸いです！
 
 <img src="document-img/takano.png" alt="takano.png" width="200px">
 
 .size_small_7[
-mBaaS非公式キャラクター<br>タカノくん
+ニフクラ mobile backend イメージキャラクター<br>タカノくん
 ]
 ]
 ]
@@ -861,7 +851,7 @@ layout: false
 ]
 
 ## おわりに
-使いやすくて便利な mBaaS をもっと活用してみたい方へ、mBaaSの各機能をすぐに試すことができるサンプルアプリを多数ご用意しています。Monacaにサンプルプロジェクトをインポートして、簡単な操作をするだけですぐにお試しいただけます！ぜひご活用ください。
+使いやすくて便利な mobile backend をもっと活用してみたい方へ、mobile backendの各機能をすぐに試すことができるサンプルアプリを多数ご用意しています。Monacaにサンプルプロジェクトをインポートして、簡単な操作をするだけですぐにお試しいただけます！ぜひご活用ください。
 
 .size_large_11[
 * [mobile backend を体験しよう！](https://github.com/NIFTYCloud-mbaas/monaca_data_registration)
