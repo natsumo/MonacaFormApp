@@ -656,8 +656,8 @@ function setData(str, results, listId) {
 
 ```js
 /***** demo3-1：条件検索 *****/
-getSearchData: function(feild, inputData) {
-    // インスタンスの生成
+getSearchData: function(feild, inputData) { //引数1 prefecture or emailAddress, 引数2 入力値
+    // インスタンスの生成
     var inquiry = ncmb.DataStore('Inquiry');
     // データの条件検索取得（完全一致）
     inquiry.order('createDate',true)
@@ -703,8 +703,8 @@ getSearchData: function(feild, inputData) {
 
 ```js
 /***** demo3-2：条件検索（範囲指定） *****/
-getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) {
-    // インスタンスの生成
+getRangeSearchData: function(feild, inputDataGreaterThan, inputDataLessThan) { //引数1 age, 引数2,3 入力値
+    // インスタンスの生成
     var inquiry = ncmb.DataStore('Inquiry');
     // データのの条件検索取得（範囲指定）
     inquiry.order('createDate',true) // 保存日時降順
