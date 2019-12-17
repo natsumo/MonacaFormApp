@@ -1,4 +1,4 @@
-# MonacaFormApp2
+# MonacaFormApp
 
 資料はこちら▼<br>
-https://natsumo.github.io/MonacaFormApp2/
+https://NIFCLOUD-mbaas.github.io/MonacaFormApp/
