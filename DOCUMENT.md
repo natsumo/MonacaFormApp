@@ -234,12 +234,16 @@ https://ja.monaca.io/
 * Monaca にプロジェクトをインポートします
   * 「インポート」をクリックし、インポート方法「ZIPファイル」を選択し、先ほどダウンロードしたzipファイルを選択します
   * プロジェクト情報を入力して「プロジェクトのインポート」をクリックします
+
+.left-column[
 * 作成されたプロジェクトを選択し、右側に表示される「クラウドIDEで開く」をクリックします
 * プロジェクトが表示されます
-
+]
+.right-column[
 .center[<img src="document-img/import_project_1.png" alt="import_project_1" width="400px">]
+]
 
-これで Monaca の準備は完了です
+これで Monaca の準備は完了です。
 
 ---
 .footnote_right[
