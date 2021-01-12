@@ -8,7 +8,7 @@ class: center, middle, inverse
 .right[<img src="document-img/takano.png" alt="takano.png" width="150px">]
 
 .footnote[
-2018/02/14作成（2018/05/21更新）
+2018/02/14作成（2021/01/12更新）
 ]
 
 ---
