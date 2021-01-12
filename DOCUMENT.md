@@ -243,6 +243,7 @@ https://ja.monaca.io/
 .center[<img src="document-img/import_project_1.png" alt="import_project_1" width="400px">]
 ]
 
+
 これで Monaca の準備は完了です。
 
 ---
